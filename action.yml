@@ -1,83 +1,33 @@
-name: 'Phoenix RoboCopy Pro'
-description: 'High-performance Windows Robocopy command builder and executor. Mirror, backup, sync, and move files with full flag control, logging, and retry logic.'
-author: 'Phoenix RoboCopy Pro'
-
+name: "Phoenix RoboCopy Pro"
+description: "A neon-themed automation action for running Robocopy presets, queues, and backup workflows."
+author: "Skyler (PHX-IT)"
 branding:
-  icon: 'upload-cloud'
-  color: 'red'
+  icon: "zap"
+  color: "pink"
 
 inputs:
+  preset:
+    description: "Name of the Phoenix RoboCopy Pro preset to run"
+    required: true
   source:
-    description: 'Source directory path to copy FROM'
-    required: true
-
+    description: "Override source directory (optional)"
+    required: false
   destination:
-    description: 'Destination directory path to copy TO'
-    required: true
-
-  mode:
-    description: 'Copy mode: mirror | incremental | highspeed | safe | move | custom'
+    description: "Override destination directory (optional)"
     required: false
-    default: 'incremental'
-
   flags:
-    description: 'Additional Robocopy flags to append (e.g. /MT:16 /R:3 /W:5)'
+    description: "Custom Robocopy flags (optional)"
     required: false
-    default: '/E /XO /MT:8 /R:3 /W:5 /NP'
-
-  include_files:
-    description: 'File patterns to include (space-separated, e.g. "*.pdf *.docx")'
+  queue:
+    description: "Run a queue of presets (comma-separated)"
     required: false
-    default: ''
-
-  exclude_files:
-    description: 'File patterns to exclude (space-separated, e.g. "*.tmp *.bak")'
-    required: false
-    default: ''
-
-  exclude_dirs:
-    description: 'Directory names to exclude (space-separated, e.g. "node_modules .git")'
-    required: false
-    default: 'node_modules .git temp'
-
-  log_path:
-    description: 'Path to write the Robocopy log file'
-    required: false
-    default: 'C:\\Logs\\robocopy.log'
-
-  dry_run:
-    description: 'Set to "true" to run in list-only mode (/L) — no files are copied'
-    required: false
-    default: 'false'
-
-  threads:
-    description: 'Number of parallel copy threads (1-128). Used with highspeed mode or custom /MT flag.'
-    required: false
-    default: '8'
-
-  retry_count:
-    description: 'Number of retries on failed files'
-    required: false
-    default: '3'
-
-  wait_time:
-    description: 'Seconds to wait between retries'
-    required: false
-    default: '5'
 
 outputs:
-  exit_code:
-    description: 'Robocopy exit code. 0=no change, 1=success, 2=extra files, 4=mismatches, 8+=failures, 16=fatal'
-
-  files_copied:
-    description: 'Number of files successfully copied (parsed from Robocopy log output)'
-
-  command:
-    description: 'The full Robocopy command that was executed'
-
-  log_output:
-    description: 'Path to the generated log file'
+  status:
+    description: "Status of the backup job"
+  report_url:
+    description: "URL of the generated backup report"
 
 runs:
-  using: 'node20'
-  main: 'dist/index.js'
+  using: "node20"
+  main: "dist/index.js"
