@@ -1,21 +1,61 @@
-MIT License
+# Phoenix RoboCopy Pro License
 
-Copyright (c) 2026 sj-master
+Copyright (c) 2026  
+Skyler — PHX-IT  
+All rights reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+---
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+## 📜 License Summary
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Phoenix RoboCopy Pro is provided for personal and commercial use **with restrictions**.  
+You may use, modify, and extend the software, but **redistribution, resale, or repackaging** is prohibited without written permission.
+
+---
+
+## ✅ Allowed
+
+- Personal use  
+- Commercial use within your own organization  
+- Modifying the source code  
+- Creating extensions, presets, or integrations  
+- Using the software in internal tools or workflows  
+
+---
+
+## ❌ Not Allowed
+
+- Redistributing the software publicly  
+- Selling or licensing Phoenix RoboCopy Pro as your own product  
+- Removing Phoenix branding  
+- Using the software for malicious or destructive purposes  
+- Hosting modified versions as public services  
+
+---
+
+## 📦 Distribution
+
+You may **fork** the repository for personal or internal use.  
+You may **not** publish modified versions publicly without permission.
+
+---
+
+## 🛡️ Liability
+
+Phoenix RoboCopy Pro is provided **"as-is"** without warranty.  
+The author is not responsible for:
+
+- Data loss  
+- System damage  
+- Misuse of Robocopy flags  
+- Incorrect configuration by the user  
+
+Use responsibly.
+
+---
+
+## 📬 Contact for Licensing
+
+For commercial licensing, redistribution rights, or partnership inquiries:
+
+📧 **phxit@icloud.com**
