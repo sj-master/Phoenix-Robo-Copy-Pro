@@ -22,7 +22,7 @@ It’s the Robocopy experience Windows should have had from the start.
 
 ![Platform](https://img.shields.io/badge/platform-Windows-blue)
 
-![License](https://img.shields.io/badge/license-Custom-purple)
+![License](https://img.shields.io/badge/license-MIT-orange)
 
 ![Status](https://img.shields.io/badge/status-Active-success)
 
