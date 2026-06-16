@@ -1,33 +1,48 @@
 name: "Phoenix RoboCopy Pro"
-description: "A neon-themed automation action for running Robocopy presets, queues, and backup workflows."
-author: "Skyler (PHX-IT)"
+description: "A neon-powered GitHub Action for running Robocopy backups, presets, and automated Phoenix workflows."
+author: "Skyler • PHX-IT"
 branding:
   icon: "zap"
-  color: "pink"
+  color: "orange"   # GitHub-approved + Phoenix-themed
 
 inputs:
   preset:
-    description: "Name of the Phoenix RoboCopy Pro preset to run"
+    description: "Name of the Phoenix preset to execute"
     required: true
   source:
-    description: "Override source directory (optional)"
+    description: "Optional override for source directory"
     required: false
   destination:
-    description: "Override destination directory (optional)"
+    description: "Optional override for destination directory"
     required: false
   flags:
-    description: "Custom Robocopy flags (optional)"
-    required: false
-  queue:
-    description: "Run a queue of presets (comma-separated)"
+    description: "Optional Robocopy flags (e.g. /MIR /E /XO)"
     required: false
 
 outputs:
   status:
-    description: "Status of the backup job"
-  report_url:
-    description: "URL of the generated backup report"
+    description: "Final status of the backup job"
+  report_path:
+    description: "Path to the generated Robocopy log/report"
 
 runs:
-  using: "node20"
-  main: "dist/index.js"
+  using: "composite"
+  steps:
+    - name: 🔥 Phoenix RoboCopy Pro — Execute Backup
+      shell: bash
+      run: |
+        echo "🔥 Phoenix RoboCopy Pro"
+        echo "Preset: ${{ inputs.preset }}"
+        echo "Source: ${{ inputs.source }}"
+        echo "Destination: ${{ inputs.destination }}"
+        echo "Flags: ${{ inputs.flags }}"
+        echo "----------------------------------------"
+
+        # Run Robocopy
+        robocopy "${{ inputs.source }}" "${{ inputs.destination }}" ${{ inputs.flags }} /LOG:phoenix-report.log
+
+        # Output results
+        echo "status=success" >> $GITHUB_OUTPUT
+        echo "report_path=phoenix-report.log" >> $GITHUB_OUTPUT
+
+        echo "🔥 Backup complete. Report saved to phoenix-report.log"
