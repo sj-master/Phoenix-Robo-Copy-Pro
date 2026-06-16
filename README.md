@@ -2,18 +2,29 @@
 
 ### A modern, neon-themed automation suite built on top of Microsoft Robocopy.
 
+<p align="center">
+  <a href="https://phoenix-robo-copy-pro.base44.app">
+    <img src="https://img.shields.io/badge/Visit%20Phoenix%20RoboCopy%20Pro-Website-orange?style=for-the-badge&logo=firefox" />
+  </a>
+</p>
+
 Phoenix RoboCopy Pro transforms the raw Robocopy command-line tool into a **visual, beginner-friendly, automation-powered backup system** with presets, queueing, cloud uploads, history logs, and developer integrations.
 
-It’s the Robocopy experience Windows should have had from the start. https://phoenix-robo-copy-pro.base44.app
+It’s the Robocopy experience Windows should have had from the start.
+
+🌐 **Live App:** [https://phoenix-robo-copy-pro.base44.app](https://phoenix-robo-copy-pro.base44.app)
 
 ---
 
-## 📛 Badges
+# 📛 Badges
 
-`https://img.shields.io/badge/version-1.0.0-pink`  
-`https://img.shields.io/badge/platform-Windows-blue`  
-`https://img.shields.io/badge/license-Custom-purple`  
-`https://img.shields.io/badge/status-Active-success`
+![Version](https://img.shields.io/badge/version-1.0.0-pink)
+
+![Platform](https://img.shields.io/badge/platform-Windows-blue)
+
+![License](https://img.shields.io/badge/license-Custom-purple)
+
+![Status](https://img.shields.io/badge/status-Active-success)
 
 ---
 
@@ -21,24 +32,24 @@ It’s the Robocopy experience Windows should have had from the start. https://p
 
 ## 🚀 Quick-Access Backup Presets
 
-Save complex Robocopy flag combinations and run them with a single click.
+Save complex Robocopy flag combinations and run them instantly.
 
 ---
 
 ## 📜 Job History Log
 
-Every backup is recorded with:
+Every backup includes:
 
-- Timestamps
-- Backup status
+- Timestamp
+- Status
 - Execution details
-- Generated HTML reports
+- HTML report link
 
 ---
 
 ## ☁️ Automatic Cloud Uploads
 
-Send backup reports directly to:
+Upload backup reports directly to:
 
 - Google Drive
 - OneDrive
@@ -48,27 +59,25 @@ Send backup reports directly to:
 
 ## 📦 Multi-Profile Queue Runner
 
-Run multiple presets sequentially with live progress tracking.
-
-Features:
+Run multiple presets sequentially with:
 
 - Queue management
 - Reordering
 - Multi-job execution
-- Progress monitoring
+- Live progress tracking
 
 ---
 
 ## 🎓 Beginner Learning Mode
 
-A full built-in course that teaches Robocopy step-by-step:
+A built-in course that teaches:
 
 - What Robocopy is
 - How flags work
 - Safe backup practices
 - Scheduling
-- Logs and reports
-- Advanced automation techniques
+- Logs & reports
+- Advanced automation
 
 ---
 
@@ -79,7 +88,7 @@ Includes:
 - API documentation
 - CLI examples
 - PowerShell templates
-- Batch automation scripts
+- Batch scripts
 - Integration guides
 
 ---
@@ -97,7 +106,12 @@ Hidden features include:
 
 # 📸 Screenshots
 
-Replace these with real images once uploaded:
+Replace these with real images:
+<img width="763" height="527" alt="image" src="https://github.com/user-attachments/assets/a8e55031-f899-483b-9a1d-ab24db7386cc" />
+<img width="1566" height="964" alt="image" src="https://github.com/user-attachments/assets/9c9f4f43-4d2f-4d8e-bdbd-343476edd0a2" />
+<img width="1564" height="1051" alt="image" src="https://github.com/user-attachments/assets/e50a6b18-508f-4258-a2c1-602d344e00df" />
+
+
 
 ```text
 /screenshots/home.png
@@ -106,191 +120,3 @@ Replace these with real images once uploaded:
 /screenshots/queue.png
 /screenshots/learn.png
 /screenshots/devhub.png
-```
-
----
-
-# ⚙️ Installation
-
-## Clone Repository
-
-```bash
-git clone https://github.com/sj-master/Phoenix-Robo-Copy-Pro.git
-
-cd Phoenix-Robo-Copy-Pro
-```
-
----
-
-## Install Dependencies
-
-```bash
-npm install
-```
-
----
-
-## Environment Variables
-
-Create a file named:
-
-```text
-.env.local
-```
-
-Add:
-
-```env
-PHOENIX_APP_ID=your_app_id
-PHOENIX_BACKEND_URL=https://your-backend-url
-```
-
----
-
-## Run The App
-
-```bash
-npm run dev
-```
-
----
-
-# 🧪 Usage
-
-## Run A Preset
-
-1. Open the **Presets** page
-2. Select a preset
-3. Click **Run Backup**
-
----
-
-## Create A New Preset
-
-Configure:
-
-- Source folder
-- Destination folder
-- Robocopy flags
-- Filters
-
-Save and reuse anytime.
-
----
-
-## Run Multiple Backups
-
-Steps:
-
-1. Add presets to queue
-2. Arrange execution order
-3. Start queue
-4. Monitor live progress
-
----
-
-# 📘 Developer API
-
-## Run A Backup Job
-
-```http
-POST /api/jobs/run
-```
-
-Example:
-
-```json
-{
-  "source": "C:\\Data",
-  "destination": "D:\\Backup",
-  "flags": [
-    "/MIR"
-  ]
-}
-```
-
----
-
-## List Presets
-
-```http
-GET /api/presets/list
-```
-
----
-
-## Upload Backup Report
-
-```http
-POST /api/cloud/upload
-```
-
-Example:
-
-```json
-{
-  "jobId": "j_001",
-  "provider": "googleDrive"
-}
-```
-
----
-
-# 🛣️ Roadmap
-
-## Planned Features
-
-- Full cloud backup support
-- Email notifications
-- Auto-repair mode
-- AI-generated backup recommendations
-- Enterprise multi-machine sync
-- Advanced scheduling
-- More automation tools
-
----
-
-## Long-Term Vision
-
-Phoenix RoboCopy Pro becomes the **ultimate Robocopy GUI** for:
-
-- Windows power users
-- Developers
-- System administrators
-- Small businesses
-
----
-
-# 🤝 Contributing
-
-Pull requests are welcome!
-
-You can contribute:
-
-- New preset templates
-- UI improvements
-- API extensions
-- Documentation
-- Bug fixes
-
----
-
-# 📄 License
-
-This project uses a custom Phoenix RoboCopy Pro license.
-
-See:
-
-```text
-LICENSE
-```
-
-for details.
-
----
-
-# 📬 Contact
-
-For support or business inquiries:
-
-📧 **phxit@icloud.com**
