@@ -1,7 +1,11 @@
 {
-  "name": "base44-app",
+  "name": "phoenix-robo-copy-pro",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "A modern, neon-themed automation suite built on top of Microsoft Robocopy.",
+  "license": "MIT",
+  "author": "Skyler J. Jones (PHX-IT)",
+  "repository": { "type": "git", "url": "https://github.com/sj-master/Phoenix-Robo-Copy-Pro.git" },
   "type": "module",
   "scripts": {
     "dev": "vite",
